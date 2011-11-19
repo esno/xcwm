@@ -30,7 +30,7 @@ clean:
 	@rm -f cwm
 	@rm -f cc.log
 
-install:
+install: all
 	@echo "# installing executable file to ${DESTDIR}${PREFIX}/bin"
 	@mkdir -p ${DESTDIR}${PREFIX}/bin
 	@cp -f cwm ${DESTDIR}${PREFIX}/bin
